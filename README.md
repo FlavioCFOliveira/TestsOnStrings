@@ -4,11 +4,11 @@ How to reproduce:
 
 - Clone the repository into a local directory
 - Build a temp docker image:
-  - docker build -t tempImg .
+  - ```docker build -t tempImg .```
 - Start a container based on tempImg Image
-  - docker run --rm -it tempImg
+  - ```docker run --rm -it tempImg```
 - Now, inside the container run the solution tests as follows:
-  - dotnet test
+  - ```dotnet test```
 
 After first attempt failed, i added the following line to the project file, and the test keeps failing
 ```xml
